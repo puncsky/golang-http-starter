@@ -17,4 +17,4 @@ build:
 lint:
 	go fmt ./...
 	go mod tidy
-	go list ./... | xargs golint
+	go list ./... | xargs go vet
